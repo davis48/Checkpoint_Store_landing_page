@@ -1,0 +1,151 @@
+/* Global Styles */
+/* These styles apply globally to the body and define the font, margins, and box-sizing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+/* Styles for the main header, including the logo, navigation menu, and search bar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Styles for the search form within the header */
+header form {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the search bar input */
+header form .search-bar {
+    width: 70%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+}
+
+/* Focus state for the search bar input */
+header form .search-bar:focus {
+    width: 70%;
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Navbar Buttons Hover Effect */
+/* Styling for the navigation links and their hover effects */
+header nav .nav-link {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header nav .nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Products Section */
+/* Styles for the products section, including background and card hover effects */
+#products {
+    background-image: url('https://media.istockphoto.com/id/1149583973/photo/blue-abstract-background-or-texture.webp?s=1024x1024&w=is&k=20&c=YE-ZZ56510gRNoc051PSKtEw13QilSgKdj30fXIG2Nc=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    color: #333;
+    padding: 50px 0;
+}
+
+/* Individual product card styles */
+#products .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for product cards */
+#products .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons inside product cards */
+#products .btn {
+    margin-right: 10px;
+}
+
+/* About Section */
+/* Styling for the about section, which provides a description of the store */
+#about {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 2px solid #343a40;
+}
+
+/* Styling for the heading within the about section */
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Content styling for the about section */
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Footer */
+/* Styling for the footer section, which includes contact and social links */
+footer {
+    position: relative;
+}
+
+/* Styling for social icons within the footer */
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects for social icons */
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+/* Responsive styling for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Adjust search bar width for smaller screens */
+    header form .search-bar {
+        width: 100%;
+    }
+
+    /* Adjust product card margin for smaller screens */
+    #products .card {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust padding and font size in the about section */
+    #about {
+        padding: 30px 10px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 0.9rem;
+    }
+}
